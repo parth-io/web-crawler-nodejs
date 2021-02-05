@@ -27,11 +27,10 @@ function getRes(req, res) {
 }
 
 function getResGET(req, res, urlGET) {
+    getRes.call(req, res);
     res.on('error', (err) => {
         console.error(err.stack);
     });
-    
-    getRes.call(req, res);
     this.urlGET = urlGET;
     
     let params = (new URL(urlGET)).searchParams;
@@ -42,11 +41,10 @@ function getResGET(req, res, urlGET) {
 
 // The following code assumes that the POST request sends data in the form key=value&key1=value1. Of course, the POST request can also send data via the req.write() method which can send a JSON object.
 function getResPOST(req, res) {
+    getRes.call(req, res);  
     res.on('error', (err) => {
         console.error(err.stack);
     });
-    
-    getRes.call(req, res);    
     let body = '';
     
     // To ensure that the stream only returns UTF-8 and not binary data
@@ -72,16 +70,15 @@ function getResPOST(req, res) {
 };
 
 function getResInvalid(req, res) {
+    getRes.call(req, res);
     res.on('error', (err) => {
         console.error(err.stack);
     });
-    
-    getRes.call(req, res);
     
     res.statusCode = 400;
     res.end('Please input the data in the proper format - either using POST or GET.');
 };
 
-exports.getResGET;
-exports.getResPOST;
-exports.getResInvalid;
+exports.getResGET = getResGET;
+exports.getResPOST = getResPOST;
+exports.getResInvalid = getResInvalid;

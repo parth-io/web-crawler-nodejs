@@ -1,7 +1,7 @@
 const https = require('https');
 
-/* The following line allows us to use the web hosting service's ((Amazon AWS) port, or if that is not provided, port 3000.
-Instead of 3000, you can use any other port. While 443 is commonly used for HTTPS, on Linux ports less than 1024 require the program to be run as root.
+/* The following line allows us to use the web hosting service's (Amazon AWS) port, or if that is not provided, port 3000.
+Instead of 3000, you can use any other port. While 443 is the default for HTTPS, on Linux ports less than 1024 require the program to be run as root.
 */
 const port = process.env.PORT || 3000
 // We run the server on the local machine, the localhost.
