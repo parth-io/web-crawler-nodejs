@@ -1,0 +1,31 @@
+{
+  "name": "web-crawler-nodejs",
+  "version": "1.0.0",
+  "description": "Web Crawler",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parth-io/web-crawler-nodejs.git"
+  },
+  "author": "Parth Gujar <gparth2610@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/parth-io/web-crawler-nodejs/issues"
+  },
+  "homepage": "https://github.com/parth-io/web-crawler-nodejs#readme",
+  "dependencies": {
+    "axios": "^0.21.1"
+  },
+  "devDependencies": {
+    "@wdio/cli": "^6.12.1",
+    "@wdio/local-runner": "^6.12.1",
+    "@wdio/mocha-framework": "^6.11.0",
+    "@wdio/spec-reporter": "^6.11.0",
+    "@wdio/sync": "^6.11.0",
+    "chromedriver": "^88.0.0",
+    "wdio-chromedriver-service": "^6.0.4"
+  }
+}
