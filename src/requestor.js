@@ -26,7 +26,7 @@ fileStream.on('error', (err) => {
 });
 
 // Given all the individual responses, the following function compares the responses and returns a single response
-// Returns an array containing all the required information, or if the website does not have it, returns null
+// Returns an array containing all the required information
 function checkResults(arrayOfAllResults) {
     arrayOfAllResults.forEach( (promise) => {
         let finalResult = [];
