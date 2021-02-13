@@ -1,5 +1,5 @@
 #!/bin/bash
-git add /media/parth-dev/b14cdd0c-608f-4c5c-9b00-2d2a5c6978b0/parth/Desktop/Coding/web-crawler-nodejs/
+git add /home/parth/Desktop/Coding/web-crawler-nodejs/
 git commit -m "Update"
 git push origin main
 exit 0
