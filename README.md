@@ -1,5 +1,7 @@
 # web-crawler-nodejs
 
+## Leaving this repo as an archive, for memories' sake and to remind me how far the road has been travelled, how long the journey.
+
 ### Problem Statement
 
 Build a web crawler that can find product names and product descriptions from barcodes by crawling websites.
